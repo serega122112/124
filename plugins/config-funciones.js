@@ -204,7 +204,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.welcome = isEnable;
       break;
-    case 'detect':
+    case 'обнаружить':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
