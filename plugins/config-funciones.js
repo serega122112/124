@@ -9,8 +9,8 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 
 const optionsFull = `_*${tradutor.texto1[0]}*_\n 
 
-${tradutor.texto1[1]}  | WELCOME"
-${tradutor.texto1[2]} ${usedPrefix + command} welcome
+${tradutor.texto1[1]}  | ПРИВЕТСТВИЕ"
+${tradutor.texto1[2]} ${usedPrefix + command} приветствие
 ${tradutor.texto1[3]}
 
 --------------------------------
@@ -192,7 +192,7 @@ ${tradutor.texto27[3]}`.trim();
   const type = (args[0] || '').toLowerCase();
   let isAll = false; const isUser = false;
   switch (type) {
-    case 'welcome':
+    case 'приветствие':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
