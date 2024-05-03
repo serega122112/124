@@ -36,20 +36,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `${tradutor.texto1[0]}
 
-${tradutor.texto1[1]} ${taguser}
 
-${tradutor.texto1[2]}
-
-${tradutor.texto1[3]} ${level}
-${tradutor.texto1[4]} ${exp}
-${tradutor.texto1[5]} ${role}
-${tradutor.texto1[6]} ${limit}
-${tradutor.texto1[7]} ${money}
-${tradutor.texto1[8]} ${joincount}
-${tradutor.texto1[9]} ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
- ${readMore}
-
- ${tradutor.texto1[10]}
   
  ღ꧁ *КОМАНДЫ ВАНИЛЬКИ* ꧂ღ
  >>>>>>>>>>>>>>>>>>>>>>
@@ -61,12 +48,6 @@ ${tradutor.texto1[9]} ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌')
  💟 #вызов  
  💟 #стикер / #с (выбрать картинку)
  💟 #включить /выключить автостикер
-
-  
-
-
-
-
 
   ▢ _${usedPrefix}viewimage_`.trim();
 
