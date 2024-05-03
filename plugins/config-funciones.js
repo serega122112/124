@@ -272,7 +272,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       global.opts['self'] = !isEnable;
       break;
-    case 'antilink':
+    case 'антиссылка':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -281,7 +281,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.antiLink = isEnable;
       break;
-    case 'antilink2':
+    case 'антиссылка2':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -486,5 +486,5 @@ break;
   conn.sendMessage(m.chat, {text: `_*${tradutor.texto28[0]}*_\n\n*${tradutor.texto28[1]}* _${type}_ *fue* ${isEnable ? '_activada_' : '_desactivada_'} *${tradutor.texto28[2]}* ${isAll ? '_bot._' : isUser ? '' : '_chat._'}`}, {quoted: m});
   //conn.sendMessage(m.chat, {text: `▢ *Opción:* ${type}\n\n▢ *Estado:* ${isEnable ? 'Activado' : 'Desactivado'}\n\n▢ *Para* ${isAll ? 'este bot' : isUser ? '' : 'este chat'}`}, {quoted: m});
 };
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i;
+handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i;
 export default handler;
