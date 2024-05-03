@@ -317,7 +317,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.modoadmin = isEnable;
       break;
-    case 'autosticker':
+    case 'автостикер':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
