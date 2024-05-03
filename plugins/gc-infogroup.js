@@ -31,24 +31,24 @@ ${tradutor.texto1[7]}
 ${listAdmin}
 
 ${tradutor.texto1[8]} 
-${tradutor.texto1[9]}  ${welcome ? '✅' : '❌'}
+${tradutor.texto1[9]}  ${Приветствие ? '✅' : '❌'}
 ${tradutor.texto1[10]}  ${detect ? '✅' : '❌'} 
 ${tradutor.texto1[11]}  ${detect2 ? '✅' : '❌'} 
-${tradutor.texto1[12]}  ${antiLink ? '✅' : '❌'} 
-${tradutor.texto1[13]}  ${antiLink2 ? '✅' : '❌'} 
+${tradutor.texto1[12]}  ${Антиссылка ? '✅' : '❌'} 
+${tradutor.texto1[13]}  ${Антиссылка2 ? '✅' : '❌'} 
 ${tradutor.texto1[14]}  ${modohorny ? '✅' : '❌'} 
 ${tradutor.texto1[15]}  ${autosticker ? '✅' : '❌'} 
-${tradutor.texto1[16]}  ${audios ? '✅' : '❌'} 
+${tradutor.texto1[16]}  ${Аудио ? '✅' : '❌'} 
 ${tradutor.texto1[17]}  ${antiviewonce ? '✅' : '❌'} 
 ${tradutor.texto1[18]}  ${antidelete ? '✅' : '❌'} 
-${tradutor.texto1[19]}  ${antiToxic ? '✅' : '❌'} 
-${tradutor.texto1[20]}  ${antiTraba ? '✅' : '❌'} 
-${tradutor.texto1[21]}  ${modoadmin ? '✅' : '❌'} 
+${tradutor.texto1[19]}  ${Антиматc ? '✅' : '❌'} 
+${tradutor.texto1[20]}  ${Антииндус ? '✅' : '❌'} 
+${tradutor.texto1[21]}  ${Толькоадмин ? '✅' : '❌'} 
 `.trim();
   conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, {mentions: [...groupAdmins.map((v) => v.id), owner]});
 };
 handler.help = ['infogrup'];
 handler.tags = ['group'];
-handler.command = /^(infogrupo|gro?upinfo|info(gro?up|gc))$/i;
+handler.command = /^(инфогруппы|gro?upinfo|info(gro?up|gc))$/i;
 handler.group = true;
 export default handler;
