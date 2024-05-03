@@ -79,7 +79,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${tradutor.texto1[0]} 
     conn.reply(m.chat, tradutor.texto1[3], m);
   }
 };
-handler.command = /^(menulabiblia|labiblia|Labiblia)$/i;
+handler.command = /^(меню2|labiblia|Labiblia)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
