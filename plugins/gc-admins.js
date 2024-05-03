@@ -23,7 +23,7 @@ ${listAdmin}
 ${tradutor.texto1[2]}`.trim();
   conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, {mentions: [...groupAdmins.map((v) => v.id), owner]});
 };
-handler.help = ['admins <texto>'];
+handler.help = ['админ <texto>'];
 handler.tags = ['group'];
 // regex detect A word without case sensitive
 handler.customPrefix = /а|@/i;
