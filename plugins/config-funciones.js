@@ -146,8 +146,8 @@ ${tradutor.texto21[2]}
 
 --------------------------------
 
-${tradutor.texto22[0]} | ANTIDELETE
-${tradutor.texto22[1]} ${usedPrefix + command} antidelete
+${tradutor.texto22[0]} | ОГРАНИЧИТЬ
+${tradutor.texto22[1]} ${usedPrefix + command} ограничить
 ${tradutor.texto22[2]}
 
 --------------------------------
@@ -255,7 +255,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.delete = isEnable;
       break;
-    case 'antidelete':
+    case 'ограничить':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
