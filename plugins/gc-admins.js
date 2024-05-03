@@ -26,7 +26,7 @@ ${tradutor.texto1[2]}`.trim();
 handler.help = ['админ <texto>'];
 handler.tags = ['group'];
 // regex detect A word without case sensitive
-handler.customPrefix = /а|@/i;
+handler.customPrefix = /#|@/i;
 handler.command = /^(админ|@admins|dmins)$/i;
 handler.group = true;
 export default handler;
