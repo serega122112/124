@@ -246,7 +246,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.antiporno = isEnable;
       break;
-    case 'delete':
+    case 'удалить':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
