@@ -67,8 +67,8 @@ ${tradutor.texto9[3]}
 
 --------------------------------
 
-${tradutor.texto10[0]} | AUDIOS
-${tradutor.texto10[1]} ${usedPrefix + command} audios
+${tradutor.texto10[0]} | АУДИО
+${tradutor.texto10[1]} ${usedPrefix + command} аудио
 ${tradutor.texto10[2]}
 
 --------------------------------
@@ -134,8 +134,8 @@ ${tradutor.texto19[3]}
 
 --------------------------------
 
-${tradutor.texto20[0]} | MODOADMIN
-${tradutor.texto20[1]} ${usedPrefix + command} modoadmin
+${tradutor.texto20[0]} | ТОЛЬКОАДМИН
+${tradutor.texto20[1]} ${usedPrefix + command} толькоадмин
 ${tradutor.texto20[2]}
 
 --------------------------------
@@ -308,7 +308,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.modohorny = isEnable;
       break;
-    case 'modoadmin':
+    case 'толькоадмин':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
@@ -326,7 +326,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.autosticker = isEnable;
       break;
-    case 'audios':
+    case 'аудио':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
@@ -483,7 +483,7 @@ break;
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: m});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `_*${tradutor.texto28[0]}*_\n\n*${tradutor.texto28[1]}* _${type}_ *fue* ${isEnable ? '_включаю_' : '_выключаю_'} *${tradutor.texto28[2]}* ${isAll ? '_bot._' : isUser ? '' : '_чате._'}`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `_*${tradutor.texto28[0]}*_\n\n*${tradutor.texto28[1]}* _${type}_ *окей* ${isEnable ? '_включаю_' : '_выключаю_'} *${tradutor.texto28[2]}* ${isAll ? '_bot._' : isUser ? '' : '_чате._'}`}, {quoted: m});
   //conn.sendMessage(m.chat, {text: `▢ *Opción:* ${type}\n\n▢ *Estado:* ${isEnable ? 'Activado' : 'Desactivado'}\n\n▢ *Para* ${isAll ? 'este bot' : isUser ? '' : 'este chat'}`}, {quoted: m});
 };
 handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i;
