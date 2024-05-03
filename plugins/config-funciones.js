@@ -255,7 +255,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.delete = isEnable;
       break;
-    case 'ограничить':
+    case 'антиудаление':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -335,7 +335,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.audios = isEnable;
       break;
-    case 'restrict':
+    case 'ограничить':
       isAll = true;
       if (!(isROwner || isOwner)) {
         global.dfail('owner', m, conn);
@@ -483,7 +483,7 @@ break;
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: m});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `▢ *Функцыя:* ${type}\n\n▢ *Команда:* ${isEnable ? 'Включена' : 'Выключена'}\n\n▢ *Для* ${isAll ? 'этого бота' : isUser ? '' : 'этого чата'}`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `▢ *Функция:* ${type}\n\n▢ *Команда:* ${isEnable ? 'Включена' : 'Выключена'}\n\n▢ *Для* ${isAll ? 'этого бота' : isUser ? '' : 'этого чата'}`}, {quoted: m});
 };
 handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i;
 export default handler;
