@@ -12,11 +12,11 @@ const handler = async (m, {conn, args}) => {
       title: tradutor.texto1[0],
       body: '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝',
       previewType: 0, thumbnail: fs.readFileSync('./Menu2.jpg'),
-      sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}});
+      sourceUrl: ``}}});
 };
 handler.help = ['linkgroup'];
 handler.tags = ['group'];
-handler.command = /^снести(gro?up)?$/i;
+handler.command = /^ссылка(gro?up)?$/i;
 handler.group = true;
 handler.botAdmin = true;
 export default handler;
