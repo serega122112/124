@@ -185,7 +185,7 @@ ${tradutor.texto27[1]} ${usedPrefix + command} antiprivado
 ${tradutor.texto27[2]}
 ${tradutor.texto27[3]}`.trim();
 
-  const isEnable = /true|enable|(turn)?on|1/i.test(command);
+  const isEnable = /true|включить|(turn)?on|1/i.test(command);
   const chat = global.db.data.chats[m.chat];
   const user = global.db.data.users[m.sender];
   const bot = global.db.data.settings[conn.user.jid] || {};
