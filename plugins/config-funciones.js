@@ -175,7 +175,7 @@ ${tradutor.texto25[3]}
 
 ${tradutor.texto26[0]} | MODEJADIBOT
 ${tradutor.texto26[1]} ${usedPrefix + command} режим
-${tradutor.texto26[2]} (${usedPrefix}serbot / ${usedPrefix}jadibot). 
+${tradutor.texto26[2]} (${usedPrefix}serbot / ${usedPrefix}режим). 
 ${tradutor.texto26[3]}
 
 --------------------------------
