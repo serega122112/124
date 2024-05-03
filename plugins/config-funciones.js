@@ -28,15 +28,15 @@ ${tradutor.texto3[2]}
 
 --------------------------------
 
-${tradutor.texto4[0]} | ANTILINK
-${tradutor.texto4[1]} ${usedPrefix + command} antilink
+${tradutor.texto4[0]} | АНТИССЫЛКА
+${tradutor.texto4[1]} ${usedPrefix + command} антиссылка
 ${tradutor.texto4[2]}
 ${tradutor.texto4[3]}
 
 --------------------------------
 
-${tradutor.texto5[0]} 🔗 | ANTILINK 2
-${tradutor.texto5[1]}  ${usedPrefix + command} antilink2
+${tradutor.texto5[0]} 🔗 | АНТИССЫЛКА 2
+${tradutor.texto5[1]}  ${usedPrefix + command} антиссылка2
 ${tradutor.texto5[2]}
 ${tradutor.texto5[3]}
 
