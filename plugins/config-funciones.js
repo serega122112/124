@@ -120,15 +120,15 @@ ${tradutor.texto17[3]}
 
 --------------------------------
 
-${tradutor.texto18[0]} | ANTIARABES
-${tradutor.texto18[1]} ${usedPrefix + command} antiarabes
+${tradutor.texto18[0]} | АНТИИНДУС
+${tradutor.texto18[1]} ${usedPrefix + command} антииндус
 ${tradutor.texto18[2]}
 ${tradutor.texto18[3]}
 
 --------------------------------
 
-${tradutor.texto19[0]} | ANTIARABES 2
-${tradutor.texto19[1]}  ${usedPrefix + command} antiarabes2
+${tradutor.texto19[0]} | АНТИИНДУС 2
+${tradutor.texto19[1]}  ${usedPrefix + command} антииндус2
 ${tradutor.texto19[2]} 
 ${tradutor.texto19[3]} 
 
@@ -461,7 +461,7 @@ break;
       }
       chat.antiTraba = isEnable;
       break;
-    case 'antiarabes':
+    case 'антииндус':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn); 
@@ -470,7 +470,7 @@ break;
       }
       chat.antiArab = isEnable;
       break;
-    case 'antiarabes2':
+    case 'антииндус2':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
@@ -483,7 +483,7 @@ break;
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: m});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `▢ *Opción:* ${type}\n\n▢ *Команда:* ${isEnable ? 'Включена' : 'Выключена'}\n\n▢ *Для* ${isAll ? 'этого бота' : isUser ? '' : 'этого чата'}`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `▢ *Функцыя:* ${type}\n\n▢ *Команда:* ${isEnable ? 'Включена' : 'Выключена'}\n\n▢ *Для* ${isAll ? 'этого бота' : isUser ? '' : 'этого чата'}`}, {quoted: m});
 };
 handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i;
 export default handler;
