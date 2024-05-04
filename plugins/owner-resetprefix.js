@@ -12,7 +12,7 @@ const handler = async (m, {conn}) => {
 };
 handler.help = ['resetprefix'];
 handler.tags = ['owner'];
-handler.command = /^(resetprefix)$/i;
+handler.command = /^(прифекс)$/i;
 handler.rowner = true;
 
 
