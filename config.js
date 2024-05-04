@@ -11,12 +11,12 @@ global.botnumber = ""
 global.confirmCode = ""
 
 global.owner = [
-  ['+79384135617', '👑Создатель бота👑', true],
-  ['+79384135617', '💫 Второй номер создателя 💫', true],
+  ['+79011033947', '👑Создатель бота👑', true],
+  ['+79011033947', '💫 Второй номер создателя 💫', true],
 ];
 
-global.suittag = ['+79384135617'];
-global.prems = ['+79384135617'];
+global.suittag = ['+79011033947'];
+global.prems = ['+79011033947'];
 
 global.packname = 'Sticker';
 global.author = 'Хулиган';
@@ -56,7 +56,7 @@ global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
 global.waitt = '*[ ⏳ ] Cargando...*';
 global.waittt = '*[ ⏳ ] Cargando...*';
 global.waitttt = '*[ ⏳ ] Cargando...*';
-global.nomorown = '+79384135617';
+global.nomorown = '+79011033947';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
