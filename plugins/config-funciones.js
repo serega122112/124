@@ -60,8 +60,8 @@ ${tradutor.texto8[2]}
 ${tradutor.texto8[3]}
 --------------------------------
 
-${tradutor.texto9[0]} | AUTOREAD
-${tradutor.texto9[1]} ${usedPrefix + command} autoread
+${tradutor.texto9[0]} | АВТОЧТЕНИЕ
+${tradutor.texto9[1]} ${usedPrefix + command} авточтение
 ${tradutor.texto9[2]}
 ${tradutor.texto9[3]}
 
@@ -367,7 +367,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       global.opts['nyimak'] = isEnable;
       break;
-    case 'autoread':
+    case 'авточтение':
       isAll = true;
       if (!(isROwner || isOwner)) {
         global.dfail('rowner', m, conn);
