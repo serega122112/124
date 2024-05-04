@@ -24,7 +24,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 };
 handler.help = ['delprem <@user>'];
 handler.tags = ['owner'];
-handler.command = /^(удалитьпрем$/i;
+handler.command = /^(удалитьпрем)prem$/i;
 handler.group = true;
 handler.rowner = true;
 export default handler;
