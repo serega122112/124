@@ -17,18 +17,18 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 *┃ ${tradutor.texto1[1]} ${name}*
 *┃*
 *┃ ${tradutor.texto1[2]}*
-*┃ 
-*┃
+*┃* 
+*┃*
 *┃ ${tradutor.texto1[4]}* 
 *┃ ${tradutor.texto1[5]}*
 *┃ ${tradutor.texto1[6]}*
 *┃ ${tradutor.texto1[7]}* 
 *┃ ${tradutor.texto1[8]}*  
 *┃ ${tradutor.texto1[12]}*
-*┃
-*┃  
-*┃  
-*┃ 
+*┃*
+*┃* 
+*┃*  
+*┃* 
 *┗ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━*
 `.trim();
   const aa = {quoted: m, userJid: conn.user.jid};
@@ -37,5 +37,5 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 };
 handler.help = ['donasi'];
 handler.tags = ['info'];
-handler.command = /^dona(te|si)|donar|apoyar$/i;
+handler.command = /^dona(te|si)|создатель|apoyar$/i;
 export default handler;
