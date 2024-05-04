@@ -31,7 +31,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   const wm = 'The Mystic Bot';
   const info = ` ${tradutor.texto1[0]}
 
-  ${tradutor.texto1[1]} Серёга
+     Серёга
    +79384135617
    
 
@@ -72,7 +72,7 @@ const handler = async (m, { conn, usedPrefix }) => {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        mediaUrl: "https://github.com",
         mediaType: 2,
         previewType: "pdf",
         title: "Хулиган",
