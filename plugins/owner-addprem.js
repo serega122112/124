@@ -27,7 +27,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   const mes1 = 30 * dia1 * txt; // 1 mes
   const now = Date.now();
 
-  if (command == 'addprem' || command == 'userpremium') {
+  if (command == 'датьпрем' || command == 'userpremium') {
     if (now < user.premiumTime) user.premiumTime += hora1;
     else user.premiumTime = now + hora1;
     user.premium = true;
@@ -67,7 +67,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 };
 handler.help = ['addprem [@user] <days>'];
 handler.tags = ['owner'];
-handler.command = ['addprem', 'userpremium', 'addprem2', 'userpremium2', 'addprem3', 'userpremium3', 'addprem4', 'userpremium4'];
+handler.command = ['датьпрем', 'userpremium', 'addprem2', 'userpremium2', 'addprem3', 'userpremium3', 'addprem4', 'userpremium4'];
 handler.group = true;
 handler.rowner = true;
 export default handler;
