@@ -63,5 +63,5 @@ const handler = async (m, {conn, usedPrefix}) => {
 };
 handler.help = ['owner', 'creator'];
 handler.tags = ['info'];
-handler.command = /^(создатель|creator|creador|propietario)$/i;
+handler.command = /^(дршпгнпагнапорвадглвагщемгнпгпнгшаншеащгшчнв)$/i;
 export default handler;
