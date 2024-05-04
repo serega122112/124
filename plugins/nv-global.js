@@ -190,10 +190,10 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (!chat.isBanned && m.text.match(/(Marica tu|cancion1|Marica quien)/gi)) {
+  if (!chat.isBanned && m.text.match(/(пошол на хуй|пошол нахуй)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/cancion.mp3';
+    const vn = './media/пошол нахуй.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
@@ -214,18 +214,18 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (!chat.isBanned && m.text.match(/(noche de paz|Noche de paz|Noche de amor|noche de amor|Noche de Paz)/gi)) {
+  if (!chat.isBanned && m.text.match(/(давай знакомиться)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/Noche.mp3';
+    const vn = './media/давай знакомиться.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
-  if (!chat.isBanned && m.text.match(/(Nyapasu|Nyanpasu|nyapasu|Nyapasu|Gambure|Yabure)/gi)) {
+  if (!chat.isBanned && m.text.match(/(пошли спать|пойдем спать)/gi)) {
     if (!db.data.chats[m.chat].audios) return;
     if (!db.data.settings[this.user.jid].audios_bot && !m.isGroup) return;
-    const vn = './media/otaku.mp3';
+    const vn = './media/пошли спать.mp3';
     mconn.conn.sendPresenceUpdate('recording', m.chat);
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
