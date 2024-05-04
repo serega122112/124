@@ -78,7 +78,7 @@ const handler = async (m, { conn, usedPrefix }) => {
         title: "Хулиган",
         body: tradutor.texto2,
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        sourceUrl: "https://github.com",
       },
     },
     caption: info,
