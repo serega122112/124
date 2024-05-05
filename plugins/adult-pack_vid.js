@@ -10,17 +10,17 @@ const handler = async (m, {conn, command, usedPrefix}) => {
 
   if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${tradutor.texto1}`;
   switch (command) {
-    case 'вау':
+    case 'сладкая':
       const url = await pack[Math.floor(Math.random() * pack.length)];
-      conn.sendMessage(m.chat, {image: {url: url}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url}, caption: `_🥵 сладкая 🥵_`}, {quoted: m});
       break;
-    case 'pack2':
+    case 'сладкая2':
       const url2 = await packgirl[Math.floor(Math.random() * packgirl.length)];
-      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 сладкая 🥵_`}, {quoted: m});
       break;
-    case 'pack3':
+    case 'сладкая3':
       const url3 = await packmen[Math.floor(Math.random() * packmen.length)];
-      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_🥵 Pack 3 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_🥵 сладкая 🥵_`}, {quoted: m});
       break;
     case 'videoxxx': case 'vídeoxxx':
       const url4 = await videosxxxc[Math.floor(Math.random() * videosxxxc.length)];
@@ -32,10 +32,10 @@ const handler = async (m, {conn, command, usedPrefix}) => {
       break;
   }
 };
-handler.command = /^(вау|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
+handler.command = /^(сладкая|сладкая2|сладкая3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
 export default handler;
 
-global.вау = [
+global.сладкая = [
   'https://telegra.ph/file/957fe4031132ef90b66ec.jpg',
   'https://telegra.ph/file/c4b85bd53030cb648382f.jpg',
   'https://telegra.ph/file/df56f8a76145df9c923ad.jpg',
@@ -68,7 +68,7 @@ global.вау = [
   'https://telegra.ph/file/ab55fca1d6b602b1a69df.jpg',
   'https://telegra.ph/file/42105cac3666b37da3d1c.jpg',
 ];
-global.packgirl = [
+global.сладкая2 = [
   'https://telegra.ph/file/c0da7289bee2d97048feb.jpg',
   'https://telegra.ph/file/b8564166f9cac4d843db3.jpg',
   'https://telegra.ph/file/fdefd621a17712be15e0e.jpg',
@@ -99,7 +99,7 @@ global.packgirl = [
   'https://telegra.ph/file/810411b9128fe11dd639a.jpg',
   'https://telegra.ph/file/5fe7e98533754b007e7a1.jpg',
 ];
-global.packmen = [
+global.сладкая3 = [
   'https://telegra.ph/file/bf303b19b9834f90e9617.jpg',
   'https://telegra.ph/file/36ef2b807251dfccd17c2.jpg',
   'https://telegra.ph/file/bcc34403d16de829ea5d2.jpg',
