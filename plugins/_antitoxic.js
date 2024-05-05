@@ -5,7 +5,7 @@
   // To set the language, in the root of the project, modify the config.json file.
 
 
-const toxicRegex = /сука|puta|rata|estupido|imbecil|rctmre|mrd|verga|vrga|maricon/i;
+const toxicRegex = /сука|блять|пидар|ебал|заебал|хуйло|ебать|хуй|мразь|нахуй/i;
 
 export async function before(m, {isAdmin, isBotAdmin, isOwner}) {
   const datas = global
