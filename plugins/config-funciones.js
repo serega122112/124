@@ -15,19 +15,6 @@ ${tradutor.texto1[3]}
 
 --------------------------------
 
-${tradutor.texto2[0]} | PUBLIC
-${tradutor.texto2[1]}* ${usedPrefix + command} public
-${tradutor.texto2[2]}
-${tradutor.texto2[3]}
-
---------------------------------
-
-${tradutor.texto3[0]} | MODOHORNY
-${tradutor.texto3[1]} ${usedPrefix + command} modohorny
-${tradutor.texto3[2]}
-
---------------------------------
-
 ${tradutor.texto4[0]} | АНТИССЫЛКА
 ${tradutor.texto4[1]} ${usedPrefix + command} антиссылка
 ${tradutor.texto4[2]}
@@ -42,22 +29,16 @@ ${tradutor.texto5[3]}
 
 --------------------------------
 
-${tradutor.texto6[0]} | DETECT
-${tradutor.texto6[1]} ${usedPrefix + command} detect
+${tradutor.texto6[0]} | ОБНАРУЖИТЬ
+${tradutor.texto6[1]} ${usedPrefix + command} обнаружить
 ${tradutor.texto6[2]}
 
 --------------------------------
 
-${tradutor.texto7[0]} | DETECT 2
-${tradutor.texto7[1]} ${usedPrefix + command} detect2
+${tradutor.texto7[0]} | ОБНАРУЖИТЬ 2
+${tradutor.texto7[1]} ${usedPrefix + command} обнаружить2
 ${tradutor.texto7[2]}
 
---------------------------------
-
-${tradutor.texto8[0]} RESTRICT
-${tradutor.texto8[1]} ${usedPrefix + command} restrict
-${tradutor.texto8[2]}
-${tradutor.texto8[3]}
 --------------------------------
 
 ${tradutor.texto9[0]} | АВТОЧТЕНИЕ
@@ -73,48 +54,28 @@ ${tradutor.texto10[2]}
 
 --------------------------------
 
-${tradutor.texto11[0]} | AUTOSTICKER
-${tradutor.texto11[1]} ${usedPrefix + command} autosticker 
-${tradutor.texto11[2]}
-
---------------------------------
-
-${tradutor.texto12[0]} | PCONLY
-${tradutor.texto12[1]} ${usedPrefix + command} pconly
-${tradutor.texto12[2]}
-${tradutor.texto12[3]}
-
---------------------------------
-
-${tradutor.texto13[0]} | GCONLY
-${tradutor.texto13[1]} ${usedPrefix + command} gconly
-${tradutor.texto13[2]} 
-${tradutor.texto13[3]}
-
---------------------------------
-
-${tradutor.texto14[0]} | ANTIVIEWONCE 
-${tradutor.texto14[1]} ${usedPrefix + command} antiviewonce
+${tradutor.texto14[0]} | АНТИПРОСМОТЕР 
+${tradutor.texto14[1]} ${usedPrefix + command} антипросмотер
 ${tradutor.texto14[2]}
 
 --------------------------------
 
-${tradutor.texto15[0]} | ANTILLAMADAS
-${tradutor.texto15[1]} ${usedPrefix + command} anticall
+${tradutor.texto15[0]} | АНТИЗВОНОК
+${tradutor.texto15[1]} ${usedPrefix + command} антизвонок
 ${tradutor.texto15[2]} 
 ${tradutor.texto15[3]}
 
 --------------------------------
 
-${tradutor.texto16[0]} | ANTITOXIC
-${tradutor.texto16[1]} ${usedPrefix + command} antitoxic
+${tradutor.texto16[0]} | АНТИМАТ
+${tradutor.texto16[1]} ${usedPrefix + command} антимат
 ${tradutor.texto16[2]}
 ${tradutor.texto16[3]}
 
 --------------------------------
 
-${tradutor.texto17[0]} | ANTITRABAS
-${tradutor.texto17[1]}  ${usedPrefix + command} antitraba
+${tradutor.texto17[0]} | АНТИАРАБ
+${tradutor.texto17[1]}  ${usedPrefix + command} антиараб
 ${tradutor.texto17[2]} 
 ${tradutor.texto17[3]} 
 
@@ -140,12 +101,6 @@ ${tradutor.texto20[2]}
 
 --------------------------------
 
-${tradutor.texto21[0]} | SIMSIMI
-${tradutor.texto21[1]} ${usedPrefix + command} simsimi
-${tradutor.texto21[2]}
-
---------------------------------
-
 ${tradutor.texto22[0]} | ОГРАНИЧИТЬ
 ${tradutor.texto22[1]} ${usedPrefix + command} ограничить
 ${tradutor.texto22[2]}
@@ -159,29 +114,15 @@ ${tradutor.texto23[3]}
 
 --------------------------------
 
-${tradutor.texto24[0]} | MODOIA
-${tradutor.texto24[1]} ${usedPrefix + command} modoia
-${tradutor.texto24[2]}
-${tradutor.texto24[3]}
-
---------------------------------
-
-${tradutor.texto25[0]} | ANTISPAM
-${tradutor.texto25[1]} ${usedPrefix + command} antispam
+${tradutor.texto25[0]} | АНТИСПАМ
+${tradutor.texto25[1]} ${usedPrefix + command} антиспам
 ${tradutor.texto25[2]}
 ${tradutor.texto25[3]}
 
 --------------------------------
 
-${tradutor.texto26[0]} | MODEJADIBOT
-${tradutor.texto26[1]} ${usedPrefix + command} режим
-${tradutor.texto26[2]} (${usedPrefix}serbot / ${usedPrefix}режим). 
-${tradutor.texto26[3]}
-
---------------------------------
-
-${tradutor.texto27[0]} | ANTIPRIVADO
-${tradutor.texto27[1]} ${usedPrefix + command} antiprivado
+${tradutor.texto27[0]} | АНТИЛИЧКА
+${tradutor.texto27[1]} ${usedPrefix + command} антиличка    
 ${tradutor.texto27[2]}
 ${tradutor.texto27[3]}`.trim();
 
@@ -216,7 +157,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.detect = isEnable;
       break;
-    case 'detect2':
+    case 'обнаружить2':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
@@ -290,7 +231,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       chat.antiLink2 = isEnable;
       break;
-    case 'antiviewonce':
+    case 'антипросмотер':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -403,7 +344,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       global.opts['swonly'] = isEnable;
       break;
-    case 'anticall':
+    case 'антизвонок':
       isAll = true;
       if (!(isROwner || isOwner)) {
         global.dfail('owner', m, conn);
@@ -411,7 +352,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       bot.antiCall = isEnable;
       break;
-    case 'antiprivado':
+    case 'антиличка':
       isAll = true;
       if (!(isROwner || isOwner)) {
         global.dfail('owner', m, conn);
@@ -427,7 +368,7 @@ ${tradutor.texto27[3]}`.trim();
       }
       bot.modejadibot = isEnable;
       break;
-    case 'antispam':
+    case 'антиспам':
       isAll = true;
       if (!(isROwner || isOwner)) {
         global.dfail('owner', m, conn);
@@ -452,7 +393,7 @@ throw false
 }}
 chat.game = isEnable          
 break;
-    case 'antitraba':
+    case 'антиараб':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
