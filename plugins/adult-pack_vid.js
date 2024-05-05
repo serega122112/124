@@ -10,7 +10,7 @@ const handler = async (m, {conn, command, usedPrefix}) => {
 
   if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${tradutor.texto1}`;
   switch (command) {
-    case 'pack':
+    case 'вау':
       const url = await pack[Math.floor(Math.random() * pack.length)];
       conn.sendMessage(m.chat, {image: {url: url}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
       break;
