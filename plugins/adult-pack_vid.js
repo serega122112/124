@@ -18,11 +18,11 @@ const handler = async (m, {conn, command, usedPrefix}) => {
       const url2 = await packgirl[Math.floor(Math.random() * packgirl.length)];
       conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 сладкая 🥵_`}, {quoted: m});
       break;
-    case 'сладкая3':
+    case 'длядевочек3':
       const url3 = await packmen[Math.floor(Math.random() * packmen.length)];
-      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_🥵 сладкая 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_🥵 сладкий 🥵_`}, {quoted: m});
       break;
-    case 'videoxxx': case 'vídeoxxx':
+    case 'сексвидео': case 'vídeoxxx':
       const url4 = await videosxxxc[Math.floor(Math.random() * videosxxxc.length)];
       await conn.sendMessage(m.chat, {video: {url: url4}, caption: `${tradutor.texto2} 🥵*`}, {quoted: m});
       break;
@@ -32,7 +32,7 @@ const handler = async (m, {conn, command, usedPrefix}) => {
       break;
   }
 };
-handler.command = /^(сладкая|сладкая2|сладкая3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
+handler.command = /^(сладкая|сладкая2|длядевочек3|сексвидео|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
 export default handler;
 
 global.сладкая = [
@@ -99,7 +99,7 @@ global.сладкая2 = [
   'https://telegra.ph/file/810411b9128fe11dd639a.jpg',
   'https://telegra.ph/file/5fe7e98533754b007e7a1.jpg',
 ];
-global.сладкая3 = [
+global.длядевочек3 = [
   'https://telegra.ph/file/bf303b19b9834f90e9617.jpg',
   'https://telegra.ph/file/36ef2b807251dfccd17c2.jpg',
   'https://telegra.ph/file/bcc34403d16de829ea5d2.jpg',
@@ -122,7 +122,7 @@ global.сладкая3 = [
   'https://telegra.ph/file/9bcfade24ae85cd417f06.jpg',
   'https://telegra.ph/file/ac0c711585f4300c54355.jpg',
 ];
-global.videosxxxc = [
+global.сексвидео = [
   'https://telegra.ph/file/4a270d9945ac46f42d95c.mp4',
   'https://telegra.ph/file/958c11e84d271e783ea3f.mp4',
   'https://telegra.ph/file/f753759342337c4012b3f.mp4',
