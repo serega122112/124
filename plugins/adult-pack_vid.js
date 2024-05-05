@@ -35,7 +35,7 @@ const handler = async (m, {conn, command, usedPrefix}) => {
 handler.command = /^(вау|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
 export default handler;
 
-global.pack = [
+global.вау = [
   'https://telegra.ph/file/957fe4031132ef90b66ec.jpg',
   'https://telegra.ph/file/c4b85bd53030cb648382f.jpg',
   'https://telegra.ph/file/df56f8a76145df9c923ad.jpg',
