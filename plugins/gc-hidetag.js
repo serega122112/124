@@ -22,7 +22,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
     const isMedia = /image|video|sticker|audio/.test(mime);
     const more = String.fromCharCode(8206);
     const masss = more.repeat(850);
-    const htextos = `${text ? text : '*Hola :D*'}`;
+    const htextos = `${text ? text : '*Привет*'}`;
     if ((isMedia && quoted.mtype === 'imageMessage') && htextos) {
       var mediax = await quoted.download?.();
       conn.sendMessage(m.chat, {image: mediax, mentions: users, caption: htextos, mentions: users}, {quoted: m});
@@ -36,7 +36,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
       var mediax = await quoted.download?.();
       conn.sendMessage(m.chat, {sticker: mediax, mentions: users}, {quoted: m});
     } else {
-      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: 'https://github.com'}}}}}, {});
+      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl:''}}}}}, {});
     }
   }
 };
