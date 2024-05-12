@@ -1,42 +1,26 @@
-// TheMystic-Bot-MD@BrunoSobrino - _antilink2.js
+let handler = m => m
 
- // Para configurar o idioma, na raiz do projeto altere o arquivo config.json
-  // Para configurar el idioma, en la raíz del proyecto, modifique el archivo config.json.
-  // To set the language, in the root of the project, modify the config.json file.
+let linkRegex = /https:/i
+handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
+  if ((m.isBaileys && m.fromMe) || m.fromMe || !m.isGroup) return true
+  let chat = global.DATABASE.data.chats[m.chat]
+  let isGroupLink = linkRegex.exec(m.text)
 
-const linkRegex = /https:/i;
-export async function before(m, {conn, isAdmin, isBotAdmin, text}) {
-    const datas = global
-    const idioma = datas.db.data.users[m.sender].language
-    const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
-    const tradutor = _translate.plugins._antilink2
-
-  if (m.isBaileys && m.fromMe) {
-    return !0;
+  if (chat.antiLink2 && isGroupLink) {
+    await m.reply(`*「 ANTI LINKS 」*\n*Hasta la vista baby👋, ${await this.getName(m.sender)} rompiste las reglas serás exterminado....!!*`)
+    await m.reply(`*Tienes 3 segundos para eliminar el link y retractarte...!!!!*`)
+    await m.reply(`*3!!*`)
+    await m.reply(`*2!!*`)
+    await m.reply(`*1!!*`)
+    if (isAdmin) return m.reply('*Te salvaste cagon(a) eres admin, no puedo eliminarte :v*')
+    if (!isBotAdmin) return m.reply('*El bot no es admin, no puede exterminar a las personas*')
+    let linkGC = ('https://chat.whatsapp.com/' + await this.groupInviteCode(m.chat))
+    let isLinkThisGc = new RegExp(linkGC, 'i')
+    let isgclink = isLinkThisGc.test(m.text)
+    if (isgclink) return m.reply('*Lol.. enviaste el enlace de este grupo :v*')
+    await this.groupRemove(m.chat, [m.sender])
   }
-  if (!m.isGroup) return !1;
-  const chat = global.db.data.chats[m.chat];
-  const delet = m.key.participant;
-  const bang = m.key.id;
-  const bot = global.db.data.settings[this.user.jid] || {};
-  const user = `@${m.sender.split`@`[0]}`;
-  const isGroupLink = linkRegex.exec(m.text);
-  if (chat.antiLink2 && isGroupLink && !isAdmin) {
-    if (isBotAdmin) {
-      const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`;
-      const linkThisGroup2 = `https://www.youtube.com/`;
-      const linkThisGroup3 = `https://youtu.be/`;
-      if (m.text.includes(linkThisGroup)) return !0;
-      if (m.text.includes(linkThisGroup2)) return !0;
-      if (m.text.includes(linkThisGroup3)) return !0;
-    }
-    await this.sendMessage(m.chat, {text: tradutor.texto1, mentions: [m.sender]}, {quoted: m});
-    if (!isBotAdmin) return m.reply(tradutor.texto2);
-    if (isBotAdmin && bot.restrict) {
-      await conn.sendMessage(m.chat, {delete: {remoteJid: m.chat, fromMe: false, id: bang, participant: delet}});
-      const responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
-      if (responseb[0].status === '404') return;
-    } else if (!bot.restrict) return m.reply(tradutor.texto3);
-  }
-  return !0;
+  return true
 }
+
+module.exports = handler
