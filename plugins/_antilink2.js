@@ -20,7 +20,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, text}) {
       if (m.text.includes(linkThisGroup2)) return !0;
       if (m.text.includes(linkThisGroup3)) return !0;
     }
-    await this.sendMessage(m.chat, {text: `*「 АНТИ ССЫЛКА 2 」*\n*ПОШОЛ ОТ СЮДА СКАТИНА 👋 ${user} В ГРУППЕ ЗАПРИЩЕННЫ ССЫЛКИ...!!*`, mentions: [m.sender]}, {quoted: m});
+    await this.sendMessage(m.chat, {text: `*「 АНТИ ССЫЛКА 2 」*\n*ПОШЁЛ ОТ СЮДА СКАТИНА 👋 ${user} В ГРУППЕ ЗАПРЕЩЕННЫ ССЫЛКИ...!!*`, mentions: [m.sender]}, {quoted: m});
     if (!isBotAdmin) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] ВЫ АДМИН ГРУППЫ, НЕ КИДАТЕ ССЫЛКУ*');
     if (isBotAdmin && bot.restrict) {
       await conn.sendMessage(m.chat, {delete: {remoteJid: m.chat, fromMe: false, id: bang, participant: delet}});
