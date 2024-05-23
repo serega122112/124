@@ -90,7 +90,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/Whatsapp1231234/ss22.git && cd ss22
+git clone https://github.com/serega122112/124.git && cd 124
 ```
 
 ```bash
