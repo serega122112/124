@@ -31,8 +31,8 @@ const handler = async (m, { conn, usedPrefix }) => {
   const wm = 'The Mystic Bot';
   const info = ` ${tradutor.texto1[0]}
 
-     Серёга
-   +79011033947
+     Юрий
+   +79686126748
    
 
   ${tradutor.texto1[4]} ${rtime}
@@ -75,7 +75,7 @@ const handler = async (m, { conn, usedPrefix }) => {
         mediaUrl: "https://github.com",
         mediaType: 2,
         previewType: "pdf",
-        title: "Хулиган",
+        title: "Администратор",
         body: tradutor.texto2,
         thumbnail: imagen1,
         sourceUrl: "https://github.com",
