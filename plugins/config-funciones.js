@@ -29,18 +29,6 @@ ${tradutor.texto5[3]}
 
 --------------------------------
 
-${tradutor.texto6[0]} | ОБНАРУЖИТЬ
-${tradutor.texto6[1]} ${usedPrefix + command} обнаружить
-${tradutor.texto6[2]}
-
---------------------------------
-
-${tradutor.texto7[0]} | ОБНАРУЖИТЬ 2
-${tradutor.texto7[1]} ${usedPrefix + command} обнаружить2
-${tradutor.texto7[2]}
-
---------------------------------
-
 ${tradutor.texto9[0]} | АВТОЧТЕНИЕ
 ${tradutor.texto9[1]} ${usedPrefix + command} авточтение
 ${tradutor.texto9[2]}
@@ -54,47 +42,6 @@ ${tradutor.texto10[2]}
 
 --------------------------------
 
-${tradutor.texto14[0]} | АНТИПРОСМОТЕР 
-${tradutor.texto14[1]} ${usedPrefix + command} антипросмотер
-${tradutor.texto14[2]}
-
---------------------------------
-
-${tradutor.texto15[0]} | АНТИЗВОНОК
-${tradutor.texto15[1]} ${usedPrefix + command} антизвонок
-${tradutor.texto15[2]} 
-${tradutor.texto15[3]}
-
---------------------------------
-
-${tradutor.texto16[0]} | АНТИМАТ
-${tradutor.texto16[1]} ${usedPrefix + command} антимат
-${tradutor.texto16[2]}
-${tradutor.texto16[3]}
-
---------------------------------
-
-${tradutor.texto17[0]} | АНТИАРАБ
-${tradutor.texto17[1]}  ${usedPrefix + command} антиараб
-${tradutor.texto17[2]} 
-${tradutor.texto17[3]} 
-
---------------------------------
-
-${tradutor.texto18[0]} | АНТИИНДУС
-${tradutor.texto18[1]} ${usedPrefix + command} антииндус
-${tradutor.texto18[2]}
-${tradutor.texto18[3]}
-
---------------------------------
-
-${tradutor.texto19[0]} | АНТИИНДУС 2
-${tradutor.texto19[1]}  ${usedPrefix + command} антииндус2
-${tradutor.texto19[2]} 
-${tradutor.texto19[3]} 
-
---------------------------------
-
 ${tradutor.texto20[0]} | ТОЛЬКОАДМИН
 ${tradutor.texto20[1]} ${usedPrefix + command} толькоадмин
 ${tradutor.texto20[2]}
@@ -104,13 +51,6 @@ ${tradutor.texto20[2]}
 ${tradutor.texto22[0]} | ОГРАНИЧИТЬ
 ${tradutor.texto22[1]} ${usedPrefix + command} ограничить
 ${tradutor.texto22[2]}
-
---------------------------------
-
-${tradutor.texto23[0]} | AUDIOS_BOT
-${tradutor.texto23[1]} ${usedPrefix + command} audios_bot
-${tradutor.texto23[2]}
-${tradutor.texto23[3]}
 
 --------------------------------
 
