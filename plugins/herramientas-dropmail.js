@@ -130,7 +130,7 @@ async function get_mails(id_) {
     const data = await response.json();
     const inbox = data['data']['session']['mails'];
 
-    // return the size of the inbox to verify the amount of mail and whether the mail has arrived
+    // верните размер почтового ящика "Входящие", чтобы проверить количество почты и ее поступление
     return [inbox, inbox.length];
   } catch (error) {
     console.log(error);
